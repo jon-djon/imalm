@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>iMalm</title>
+    <style>
+        body {
+            -webkit-animation: pulse 120s infinite normal;
+        }
+
+        body img {
+            display: block;
+            margin: 0 auto;
+            opacity: .4;
+            -webkit-animation: rollIn 2s 1 normal;
+        }
+
+        @-webkit-keyframes pulse {
+            0% {background-color: #3fa9f5;}
+            25% {background-color: #7ac943;}
+            50% {background-color: #ff1d25;}
+            75% {background-color: #ff7bac;}
+            100% {background-color: #3fa9f5;}
+        }
+
+        @-webkit-keyframes rollIn {
+            0% { -webkit-transform: translateX(-300%) rotate(-120deg); }
+            100% { -webkit-transform: translateX(0px) rotate(0deg); }
+        }
+
+        @-moz-keyframes rollIn {
+            0% { -moz-transform: translateX(-300%) rotate(-120deg); }
+            100% { -moz-transform: translateX(0px) rotate(0deg); }
+        }
+
+        @-ms-keyframes rollIn {
+            0% { -ms-transform: translateX(-300%) rotate(-120deg); }
+            100% { -ms-transform: translateX(0px) rotate(0deg); }
+        }
+
+        @-o-keyframes rollIn {
+            0% { -o-transform: translateX(-300%) rotate(-120deg); }
+            100% { -o-transform: translateX(0px) rotate(0deg); }
+        }
+
+        @keyframes rollIn {
+            0% { transform: translateX(-300%) rotate(-120deg); }
+            100% { transform: translateX(0px) rotate(0deg); }
+        }
+
+.rollIn {
+    -webkit-animation-name: rollIn;
+    -moz-animation-name: rollIn;
+    -ms-animation-name: rollIn;
+    -o-animation-name: rollIn;
+    animation-name: rollIn;
+}
+    </style>
+  </head>
+  <body>
+    <img src="malm.png" />
+  </body>
+</html>
